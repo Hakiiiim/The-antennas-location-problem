@@ -427,7 +427,7 @@ front = "lines", back = "lines")
 front = "lines", back = "lines")
 28 axes3d()
 ```
-<img src="Figures/11(quality).jpg">
+<img src="Figures/11(quality).png">
 
 Which is conform to what we expect.
 
@@ -442,13 +442,13 @@ analysed the LHS property : Figures 12
 For the 6D case we kept the same logic by plotting the first antenna’s longi-
 tude to its latitude (for example x1 to x2) and the result is the same, they are all LHS designs.
 
-<img src="Figures/12(lhstrain).jpg">
+<img src="Figures/12(lhstrain).png">
 
 1. b.To compare our designs, we created two new designs, a uniform one and
 a regular one (factorial design) with the same number of points as our training
 Data (20 points), here is what they look like : Figure 13
 
-<img src="Figures/13(lhstest).jpg">
+<img src="Figures/13(lhstest).png">
 
 We then implemented the Maximin criterion and computed it for the three
 designs to compare (training Data, uniform design, factorial design) :
@@ -572,7 +572,7 @@ to the discrepancy criteria.
 For a number of points equal to 20 with 5000 candidate points, the given
 design with its corresponding metrics is as follows :
 
-<img src="Figures/16(rss2d).jpg">
+<img src="Figures/16(rss2d).png">
 
 ```
 1 > print(c("maximin pour grille amelioree avec discrepance ...
@@ -596,7 +596,7 @@ the best of a number of Candidates based on multiple criteria, in our case it
 is the IMSE criteria, the Design corresponding to it is the following with its
 metrics (Maximin and discrepancy measurements) : Figure 17
 
-<img src="Figures/17(maximin).jpg">
+<img src="Figures/17(maximin).png">
 
 ```
 1 > print(c("discrepancy pour grille generee avec le critere ...
@@ -664,7 +664,7 @@ point is added
 For a number of points equal to 20 with 500 candidate points, the given
 design with its corresponding metrics is as follows :
 
-<img src="Figures/18(imse).jpg">
+<img src="Figures/18(imse).png">
 
 ```
 1 > print(c("maximin pour grille generee avec le critere MaxVar", ...
@@ -716,16 +716,16 @@ the position of the free antenna.
 We know that the decomposition of SOBOL is unique as follows :
 
 S 0 +S 1 (X 1 ) +S 2 (X 2 ) +S 1 , 2 (X 1 ,X 2 )
-S(X 1 ,X 2 )is approximated by a kriging mean function
+
+S(X 1 ,X 2 ) is approximated by a kriging mean function
 The objective will be the simulation of S1 and S2 on [LB,UB] and compute
 SOBOL indices then after applying MORRIS method on the same data and
 comparing the results.
 The following figures show the estimate of the conditional expectation of X
 and X2 (the position of the free antenna) which is defined by :
 
-```
 E(S(X)|Xi)−S 0 , with S 0 =E(S(X))
-```
+
 
 <img src="Figures/18(imse).jpg">
 
