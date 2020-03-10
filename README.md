@@ -813,14 +813,17 @@ For computations we choose to generate 10000 for each Xi
 ```
 Figure22 – Projection on the variable for the 1st antenna
 ```
+
 <img src="Figures/25.jpg">
 ```
 Figure23 – Projection on the variable for the 2nd antenna
 ```
+
 <img src="Figures/26.jpg">
 ```
 Figure24 – Projection on the variable for the 3th antenna
 ```
+
 As in 2D the SOBOL indices are calculated using the fast99() method, the
 following plot shows the main effect of each variable and its interaction with the
 other variables :
@@ -829,6 +832,7 @@ other variables :
 ```
 Figure25 – SOBOL indices on 6D
 ```
+
 As we can see all the variables have a non-negligible main effect, although
 the variable X2 and X6 have a close almost zero main effect but let’s not forget
 that they have an important interaction with the other variables which appear
@@ -843,6 +847,7 @@ idea about the distribution of the variables Xi on the space (σ,μ∗)
 ```
 Figure26 – MORRIS plot on 6D
 ```
+
 We can see that the two variables X2 and X6 do not have a very large total
 effect due to their small value ofμ∗but we cannot neglect them because they
 have a fairly significant interaction with the other variables due to their values
