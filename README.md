@@ -1,5 +1,5 @@
 # The-antennas-location-problem
-We study the influence of the location of antennas for the covering of a territory.
+We study the influence of the location of antennas for the covering of a territory using SVR, Kriging Model, Design of Experiments, Sensitivity analysis and global optimization.
 
 # The antennas location problem project for the
 
