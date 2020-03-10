@@ -1,11 +1,7 @@
 # The-antennas-location-problem
 We study the influence of the location of antennas for the covering of a territory using SVR, Kriging Model, Design of Experiments, Sensitivity analysis and global optimization.
 
-# The antennas location problem project for the
-
-# class "exploitation mathématique des
-
-# simulateurs numériques"
+# The antennas location problem project for the class "exploitation mathématique des simulateurs numériques"
 
 ## Abdelhakim Benechehab, Younes Gueddari, Brahim Adref
 
@@ -727,19 +723,20 @@ and X2 (the position of the free antenna) which is defined by :
 E(S(X)|Xi)−S 0 , with S 0 =E(S(X))
 
 
-<img src="Figures/18(imse).jpg">
+<img src="Figures/21.jpg">
 
 Now is the time to calculate the sensitivity indices by the SOBOL method.
 Indeed, the sensitivity indices are very synthetic measures of the model’s sensi-
 tivity to factors, and they have a precise mathematical definition based on the
 variance as follows :
 
-V arE(S(X)|Xi)
-V ar(S(X))
+VarE(S(X)|Xi)/Var(S(X))
+
 For the calculated we used thefast99()function of the sensitivity package.
 The following figure shows the plot of SOBOL indices with their main effect
 and the interaction of each with the other indices.
 
+<img src="Figures/22.jpg">
 ```
 Figure20 – SOBOL indices for 2D
 ```
@@ -753,13 +750,13 @@ on the same data and will compare the results.
 The principle of the Morris method is to estimate the sensitivity one para-
 meter at a time (OAT), called the trajectory, and to repeat this evaluation at
 several points in the parameter space.
-Using themorris()function of package sensitivity we will have as outputs :
+Using the morris()function of package sensitivity we will have as outputs :
 
 ```
 μi∗:The average of the r absolute values|∆i(h)|
-σi: Thestandard deviation of the r values∆i(h)
-With an interpretation as follows :
+σi: Thestandard deviation of the r values ∆i(h)
 ```
+With an interpretation as follows :
 ```
 1 if mu_i*is large
 2 X_i is influent;
@@ -770,9 +767,10 @@ output is linear / X_i
 6 segma_i = 0;
 7 end
 ```
-```
+
 The plot below shows us the position ofX 1 andX 2 in the(σ,μ∗)
-```
+
+<img src="Figures/23.jpg">
 ```
 Figure21 – 2D Morris method plot
 ```
@@ -785,22 +783,22 @@ we got using the SOBOL method
 ### 4.2 The 6 dimensional case
 
 This part which interests us the most, because we will study the influence of
-the variables{Xi}i∈[1,6]which correspond to the position of the 3 antennas
+the variables {Xi} i ∈ [1,6] which correspond to the position of the 3 antennas
 which are all free with :
 
 - (X 1 ,X 2 ): Represents the first antenna
 - (X 3 ,X 4 ): Represents the second antenna
 - (X 5 ,X 6 ): Represents the third antenna
-All these variables are uniformly distributed over the interval[LB,UB]that
+All these variables are uniformly distributed over the interval [LB,UB] that
 we defined previously.
 The main objective of this part is to show that the SOBOL decomposition
-ofS(X 1 ,X 2 ,X 3 ,X 4 ,X 5 ,X 6 )would have 6 non-null terms.
+of S(X 1 ,X 2 ,X 3 ,X 4 ,X 5 ,X 6 ) would have 6 non-null terms.
 The approach will be the same as in 2D :
 1. Generate our model which will approximate the function S with the Kri-
-ging average (using thekm()function withcovtype= ‘matern 3 ′ 2 ) the
+ging average (using the km()function with covtype= ‘matern 3/2 ) the
 result of the meta-modeling part
-2. SimulateSiwithi∈[LB,UB]
-3. Calculate the SOBOL indices (using thefast99()function)
+2. Simulate Si with i∈[LB,UB]
+3. Calculate the SOBOL indices (using thefast99() function)
 4. Apply the MORRIS method and compare the results
 The following figures show the estimate of the conditional expectation of Xi
 of each antenna which is defined by :
@@ -808,42 +806,44 @@ of each antenna which is defined by :
 ```
 E(S(X)|Xi)−S 0 , WithS 0 =E(S(X))
 ```
-```
-For computations we choose to generate 10000 for eachXi
-```
+
+For computations we choose to generate 10000 for each Xi
+
+<img src="Figures/24.jpg">
 ```
 Figure22 – Projection on the variable for the 1st antenna
 ```
-
+<img src="Figures/25.jpg">
 ```
 Figure23 – Projection on the variable for the 2nd antenna
 ```
+<img src="Figures/26.jpg">
 ```
 Figure24 – Projection on the variable for the 3th antenna
 ```
-As in 2D the SOBOL indices are calculated using thefast99()method, the
+As in 2D the SOBOL indices are calculated using the fast99() method, the
 following plot shows the main effect of each variable and its interaction with the
 other variables :
 
-
+<img src="Figures/27.jpg">
 ```
 Figure25 – SOBOL indices on 6D
 ```
 As we can see all the variables have a non-negligible main effect, although
-the variableX 2 andX 6 have a close almost zero main effect but let’s not forget
+the variable X2 and X6 have a close almost zero main effect but let’s not forget
 that they have an important interaction with the other variables which appear
 normal because all the antennas are free and we cannot eliminate the interaction
 of these two variables with the others otherwise we will have results which are
 not relevant (lack of precision).
 Using the method of MORRIS to compare the results with those which we
 obtained by using the decomposition of SOBOL, the following plot gives us an
-idea about the distribution of the variablesXion the space(σ,μ∗)
+idea about the distribution of the variables Xi on the space (σ,μ∗)
 
-
+<img src="Figures/28.jpg">
 ```
 Figure26 – MORRIS plot on 6D
 ```
-We can see that the two variablesX 2 andX 6 do not have a very large total
+We can see that the two variables X2 and X6 do not have a very large total
 effect due to their small value ofμ∗but we cannot neglect them because they
 have a fairly significant interaction with the other variables due to their values
 of sigma which is different of zero. This reassures the results that we obtained
