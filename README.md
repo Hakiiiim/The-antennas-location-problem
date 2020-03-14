@@ -1,6 +1,16 @@
 # The-antennas-location-problem
 We study the influence of the location of antennas for the covering of a territory using SVR, Kriging Model, Design of Experiments, Sensitivity analysis and global optimization.
 
+
+The problem detailed description is in the PDF file : antennas_project_statement_2019.pdf
+
+
+Training and test datasets for the 2d (one antenna) and the 6d (3 antennas) cases are in the R workspaces : antennes_2d_test.Rdata,antennes_2d_train.Rdata, antennes_6d_test.Rdata, antennes_2d_train.Rdata
+
+The R (or MATLAB for the SVR part) files are in different folders
+
+<img src="Figures/statement.jpg">
+
 # The antennas location problem project for the class "exploitation mathématique des simulateurs numériques"
 
 ## Abdelhakim Benechehab, Younes Gueddari, Brahim Adref
