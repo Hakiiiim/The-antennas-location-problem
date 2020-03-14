@@ -72,19 +72,12 @@ de mettre chaque pointxk=dans sa région appropriée, ainsi on est devant un
 problème d’Optimisation sous contraintes qui a deux formulations :
 Formulation primale :
 
-<img src="https://render.githubusercontent.com/render/math?math=\begin{cases} 
-\min \frac{1}{2} \|w\| ^2 \\  
-\forall k=1 \cdots p,l_k( f(x)=w^T x_k + b ) \leq 1 
-\end{cases}">
+<img src="Figures/math1.jpg">
 
 Après écriture du Lagrangien du problème et résolution de ses gradients
 égaux à zéro (fonction convexe) on obtient la Formulation duale :
 
-<img src="https://render.githubusercontent.com/render/math?math=\begin{cases} 
-\max_{\alpha \geq 0} (H(\alpha)) \text{ Avec } H(\alpha)=-\frac{1}{2}\alpha^T A \alpha + u^T \alpha \text{, } A_{ij} = l_i l_j x_{i}^T x_j \text{, } u = (1,1,...1) \\  
-\sum_{\substack{0<i<p }} \alpha_i l_i = 0 \\
-\alpha_i \geq 0
-\end{cases}  ">
+<img src="Figures/math2.jpg">
 
 La résolution de ce problème d’optimisation se fait à l’aide de l’algorithme
 d’UZAWA (gradient projeté), plus de détails à retrouver sur les supports de
