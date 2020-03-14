@@ -19,21 +19,37 @@ their location.
 ## Table des matières
 
 1 Local optimization, SVM (Eric Touboul) 2
+
 1.1 Principe des méthodes SVM..................... 2
+
 1.2 Coeur du programme......................... 3
+
 1.3 Analyse du code MATLAB..................... 4
+
 1.4 méthodes SVR et application sur le problème des antennes... 7
+
+_
 
 2 Metamodeling (Xavier Bay) 9
 
+_
+
 3 Design of Experiments (Mickaël Binois) 12
 
+_
+
 4 Global sensitivity analysis (Espéran Padonou) 20
+
 4.1 Two dimensional case........................ 20
+
 4.2 The 6 dimensional case........................ 23
 
+_
+
 5 Global optimization (Rodolphe Le Riche) 27
+
 5.1 CMA-ES optimization of the kriging mean............. 27
+
 5.2 One EGO iteration.......................... 29
 
 
