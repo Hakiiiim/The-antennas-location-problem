@@ -888,14 +888,14 @@ We made also some changes in CMAES algorithm to use it as a maximiser.
 ( We changed y to -y)
 
 
-<img src="Figures/29.png">
+<img src="Figures/29.PNG">
 ```
 Figure27 – Optimizing using ES 1-1
 ```
 
 With the optimal solution : (x=1.424406 ,y=-3.990666) and fbest= 33.55673.
 
-<img src="Figures/30.png">
+<img src="Figures/30.PNG">
 ```
 Figure28 – CMA-ES
 ```
@@ -904,17 +904,17 @@ We can notice that both algorithms give approximately the same solutions.
 Case of 6D :
 We used a new function to calculate the mean of kriging :
 
-<img src="Figures/31.png">
+<img src="Figures/31.PNG">
 ```
 Figure29 – fonction meanofGP6D
 ```
 
-<img src="Figures/32.png">
+<img src="Figures/32.PNG">
 ```
 Figure30 – Code kriging 6D for ES(1+1) method
 ```
 
-<img src="Figures/33.png">
+<img src="Figures/33.PNG">
 ```
 Figure31 – Code kriging 6D for CMAES method
 ```
