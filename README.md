@@ -899,6 +899,7 @@ With the optimal solution : (x=1.424406 ,y=-3.990666) and fbest= 33.55673.
 ```
 Figure28 – CMA-ES
 ```
+
 With the optimal solution : (x=1.426178 ,y=-3.972225) and fbest = 33.55699
 We can notice that both algorithms give approximately the same solutions.
 Case of 6D :
@@ -918,6 +919,7 @@ Figure30 – Code kriging 6D for ES(1+1) method
 ```
 Figure31 – Code kriging 6D for CMAES method
 ```
+
 With ES-(1+1) we obtained xbest = ( 2.318783, -3.736626, -2.551974, 3.175625
 ,-2.630278 ,3.948907) and : fbest=60.83426
 With CMA-ES we obtained : xbest = (2.19264510, -4.01228413, -2.71227043,
