@@ -951,4 +951,4 @@ new regions and provides the real values instead of predicted ones.
 If we had 100 iterations of the EGO algorithm, we would have more explored
 points which will improve our chances to get closer to the global optima.
 
-
+Thank you for reading.
