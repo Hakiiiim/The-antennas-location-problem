@@ -5,7 +5,7 @@ We study the influence of the location of antennas for the covering of a territo
 The problem detailed description is in the PDF file : antennas_project_statement_2019.pdf
 
 
-Training and test datasets for the 2d (one antenna) and the 6d (3 antennas) cases are in the R workspaces : antennes_2d_test.Rdata,antennes_2d_train.Rdata, antennes_6d_test.Rdata, antennes_2d_train.Rdata
+Training and test datasets for the 2d (one antenna) and the 6d (3 antennas) cases are in the R workspaces : antennes_2d_test.Rdata,antennes_2d_train.Rdata, antennes_6d_test.Rdata, antennes_2d_train.Rdata (MATLAB workspaces are in the SVR folder with the same names)
 
 The R (or MATLAB for the SVR part) files are in different folders
 
