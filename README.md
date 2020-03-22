@@ -11,7 +11,7 @@ The R (or MATLAB for the SVR part) files are in different folders
 
 <img src="Figures/statement.jpg">
 
-The first part of the report (SVR method) is in Frensh (send me a private message if you need any translation of it), the rest is in English. The R scripts are also commented in English. 
+The first part of the report (Introduction to SVM and SVR method for the problem) is in Frensh (send me a private message if you need any translation of it), the rest is in English. The R scripts are also commented in English. 
 
 # The antennas location problem project for the class "exploitation mathématique des simulateurs numériques"
 
